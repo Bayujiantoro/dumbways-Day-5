@@ -11,6 +11,7 @@ function getData(event) {
     let startDate = document.getElementById('startDate').value
     let endDate = document.getElementById('endDate').value
     let description = document.getElementById('description').value
+    
 
     let nodeJs = document.getElementById('nodeJs').checked
     let nextJs = document.getElementById('nextJs').checked
@@ -18,8 +19,10 @@ function getData(event) {
     let typeScript = document.getElementById('typeScript').checked
 
     let fileImg = document.getElementById('fileImg').files[0]
+    
 
     fileImg = URL.createObjectURL(fileImg);
+    
 
     if (nameProject == "") {
         return alert('Tolong Lengkapi Form yg tersedia 😊😉')
@@ -41,6 +44,7 @@ function getData(event) {
     console.log(dataProject)
 
     showData()
+    document.getElementById('example').style.display = "none"
 
  
 }
